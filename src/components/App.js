@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
-import Home from './home';
+import Home from './Home';
+import About from './About';
+import Photos from './Photos';
+import Live from './Live';
+import Contact from './Contact';
 import './../css/basic.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-      <Header />
-      
+        <Header />
         <Navbar />
-        <div id="content">
-          <h1>Welcome</h1>
-          <p id="intro">Welcome to the official website of Jay Skript and the Domsters. Here, you can <a href="about.html">learn more about the band</a>, view <a href="photos.html">photos of the band</a>, find out about <a href="live.html">tour dates</a> and <a href="contact.html">get in touch with the band</a>.</p>
-        </div>
+        <Home />
+        <About />
+        <Photos />
+        <Live />
+        <Contact />
       </div>
     );
   }
